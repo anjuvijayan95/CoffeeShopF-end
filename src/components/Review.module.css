@@ -1,0 +1,64 @@
+.review{
+    margin: 0 auto;
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-bottom: 3.5rem;
+    margin-top: 5rem;
+}
+
+.heading>span{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin: 0 10rem;
+}
+
+.boxContainer>.box>.smile{
+    width: 50px;
+}
+
+.boxContainer>.box>.customer{
+    width: 7rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.boxContainer>.box{
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.boxContainer>.box>p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.boxContainer>.box>h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.boxContainer>.box>.star>.s{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+
+@media screen and (max-width:850px){
+    .boxContainer{
+        margin: 0 3rem;
+    }
+}

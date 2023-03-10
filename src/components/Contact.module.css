@@ -1,0 +1,85 @@
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-bottom: 3.5rem;
+    margin-top: 5rem;
+}
+
+.heading>span{
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--black);
+    margin: 0 10rem;
+}
+
+img{
+    flex: 1 1 45rem;
+    width: 100%;
+
+}
+
+form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+form>h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    background: var(--black);
+    border: var(--border);
+}
+
+.inputBox>span{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0 2rem;
+}
+
+.inputBox>input{
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: var(--bg);
+}
+
+.btn{
+    background-color: var(--main-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: bold;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+}
+
+
+@media screen and (max-width:850px){
+
+    .row{
+        margin: 0 3rem;
+    }
+}

@@ -1,0 +1,84 @@
+.heroImage{
+    background-image: url('https://cdn.pixabay.com/photo/2021/12/18/07/55/cup-6878196_960_720.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -110px; right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 15rem;
+}
+
+.content>h3{
+    font-size: 6rem;   
+    text-transform: uppercase; 
+    color: #fff;
+}
+
+.content{
+max-width: 60rem;
+}
+
+.content>p{
+    font-size: 2rem;   
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem;
+    color: #eee;
+}
+
+.content>.btn{
+    background-color: var(--main-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-top: .2rem;
+
+}
+
+
+
+
+
+@media screen and (max-width:850px){
+
+    .heroImage{
+        /* background-position: right; */
+        justify-content: center;
+        padding-left: 4rem;
+        min-height: 80vh;
+    }
+
+    .content>h3{
+        font-size: 4.5rem;
+    }
+
+    .content>p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .heroImage{
+        background-position: right;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0rem 2rem;
+        min-height: 100vh;
+    }
+
+    .content>h3{
+        font-size: 3.5rem;
+    }
+
+    .content>p{
+        font-size: 1.5rem;
+    }
+}

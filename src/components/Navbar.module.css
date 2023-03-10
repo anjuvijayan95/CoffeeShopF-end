@@ -1,0 +1,274 @@
+#navigation{
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom:var(--border);
+    position: relative;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+#navigation>.logo>img{
+    width: 6rem;
+
+}
+
+#navigation>.navbar>a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+#navigation>.navbar>a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color) ;
+    padding-bottom: .5rem;
+}
+
+/* .icon{
+    cursor: pointer;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color:"#fff";
+} */
+
+.icon>:hover{
+    color: var(--main-color);
+}
+
+#menu{
+    display: none;
+}
+
+.searchForm{
+    position: absolute;
+    top: 115%; right:7% ;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.searchForm>input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+.searchForm>label{
+    cursor: pointer;
+    font-size: 2.4rem;
+    margin-left: 1.7rem;
+    color: var(--black);
+    
+}
+
+.searchForm>label>:hover{
+    color: var(--main-color);
+}
+
+.cartItem{
+    background-color: #fff;
+    position: absolute;
+    top: 115%; right: 1%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    height: calc(100vh - 15.5rem);
+    width: 40rem;
+    /* box-shadow: 0rem 1rem 2rem #fff; */
+}
+
+.cartItem>hr{
+    background-color: var(--black);
+    width: 100%;
+    height: .1rem;
+    border: none;
+}
+
+.item{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.item>.close{
+    color: var(--black);
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.item>.close:hover{
+    color: var(--main-color);
+}
+
+.item>img{
+    width: 7rem;
+}
+
+.item>.content{
+    color: var(--black);
+    display: flex;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+
+.item>.content>.price{
+    font-size: 1.5rem;
+    color: rgb(173, 13, 13);
+    font-weight: 800;
+}
+
+.btn{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px var(--black);
+    background-color: var(--bg);
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: var(--main-color);
+    color:var(--bg);
+    letter-spacing: .2rem;
+}
+
+
+
+
+/* media query */
+
+@media screen and (max-width:850px){
+    .cartItem{
+        width: 35rem;
+        gap: 4rem;
+        height: fit-content;
+        background-color: var(--main-color);
+    }
+
+    .cartItem>hr{
+        background-color: var(--black);
+        width: 100%;
+        height: .1rem;
+        border: none;
+    }
+
+    .item{
+        gap: 2rem;
+        position: relative;
+    }
+
+    .item>img{
+        width: 5rem;
+    }
+
+    .item>.content{
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    .item>.close{
+        position: absolute;
+        top: 0%; right: 2%;
+        font-size: 1.9rem;
+    }
+
+    .btn:hover{
+        background-color: var(--bg);
+        color:#fff;
+        letter-spacing: .2rem;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .searchForm{
+        top: 115%; right: 5%;
+        background: #fff;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    #menu{
+        display:inline;
+    }
+
+    #navigation>.navbar{
+        display: none;
+    }
+
+    #navigation>.navbar1{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%; right: 1%;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        background-color: var(--main-color);
+    }
+
+    #navigation>.navbar1>a{
+        color: var(--black);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    #navigation>.navbar1>a:hover{
+        letter-spacing: .05rem;
+        color:
+         var(--black);
+    }
+
+    .cartItem{
+        width: 22rem;
+        gap: 1rem;
+        height: calc(100vh - 25.5rem);
+        background-color: var(--main-color);
+    }
+
+    .cartItem>hr{
+        background-color: var(--black);
+        width: 100%;
+        height: .1rem;
+        border: none;
+    }
+
+    .item{
+        gap: 1rem;
+        position: relative;
+    }
+
+    .item>img{
+        width: 5rem;
+    }
+
+    .item>.content{
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .item>.close{
+        position: absolute;
+        top: 0%; right: 2%;
+        font-size: 1.5rem;
+    }
+}
+

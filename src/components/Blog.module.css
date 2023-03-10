@@ -1,0 +1,83 @@
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+  margin-top: 5rem;
+}
+
+.heading > span {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin: 0 10rem;
+  gap: 1.5rem;
+}
+
+.boxContainer > .box {
+  border: var(--border);
+}
+
+.boxContainer > .box > .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.boxContainer > .box > .image> img {
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.boxContainer > .box:hover>.image>img{
+    transform: scale(1.2);
+}
+
+.boxContainer > .box> .content{
+    padding: 2rem;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.boxContainer > .box> .content >a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.boxContainer > .box> .content >span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.boxContainer > .box> .content >p{
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+.btn{
+    background-color: var(--main-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: bold;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+}
+
+
+
+@media screen and (max-width:850px){
+  .boxContainer {
+    margin: 0 3rem;
+  }
+}
